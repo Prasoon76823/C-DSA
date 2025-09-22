@@ -1,0 +1,440 @@
+//PATTERN
+// 123
+// 123
+// 123
+
+int main() {
+    int n;
+    cout<<"Enter n: ";
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<n;j++)
+        {
+            cout<<j+1;
+        }
+        cout<<endl;
+    }
+}
+
+// ABC
+// ABC
+// ABC
+
+int main() {
+    int n;
+    cout<<"Enter n: ";
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+        char ch='A';
+        for(int j=0;j<n;j++)
+        {
+            cout<<ch;
+            ch++;
+        }
+        cout<<endl;
+    }
+}
+
+// 123
+// 456
+// 789
+
+int main() {
+    int n;
+    cout<<"Enter n: ";
+    cin>>n;
+    int num=1;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<n;j++)
+        {
+            cout<<num;
+            num++;
+        }
+        cout<<endl;
+    }
+}
+
+// ABC
+// DEF
+// GHI
+
+int main() {
+    int n;
+    cout<<"Enter n: ";
+    cin>>n;
+    int num=1;
+    char ch='A';
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<n;j++)
+        {
+            cout<<ch;
+            ch++;
+        }
+        cout<<endl;
+    }
+}
+
+
+ * 
+ *  * 
+ *  *  * 
+ *  *  *  *
+
+int main() {
+    int n;
+    cout<<"Enter n: ";
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<=i;j++)
+        {
+            cout<<" * ";
+        }
+        cout<<endl;
+    }
+}
+
+1	
+2	2	
+3	3	3	
+
+int main() {
+    int n;
+    cout<<"Enter n: ";
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<=i;j++)
+        {
+            cout<<i+1<<"\t";
+        }
+        cout<<endl;
+    }
+}
+
+A	
+B	B	
+C	C	C	
+
+int main() {
+    int n;
+    cout<<"Enter n: ";
+    cin>>n;
+    char ch='A';
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<=i;j++)
+        {
+            cout<<ch<<"\t";
+        }
+        cout<<endl;
+        ch++;
+    }
+}
+
+1	
+1	2	
+1	2	3	
+1	2	3	4	
+
+int main() {
+    int n;
+    cout<<"Enter n: ";
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<=i;j++)
+        {
+            cout<<j+1<<"\t";
+        }
+        cout<<endl;
+    }
+}
+
+1
+21
+321
+4321
+
+int main() {
+    int n;
+    cout<<"Enter n: ";
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=i;j>=0;j--)
+        {
+            cout<<j+1;
+        }
+        cout<<endl;
+    }
+}
+
+1	
+2	3	
+4	5	6	
+7	8	9	10	
+
+int main() {
+    int n;
+    cout<<"Enter n: ";
+    cin>>n;
+    int num=1;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<=i;j++)
+        {
+            cout<<num<<"\t";
+            num++;
+        }
+        cout<<endl;
+    }
+}
+
+A	
+B	C	
+D	E	F	
+G	H	I	J	
+
+int main() {
+    int n;
+    cout<<"Enter n: ";
+    cin>>n;
+    char ch='A';
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<=i;j++)
+        {
+            cout<<ch<<"\t";
+            ch++;
+        }
+        cout<<endl;
+    }
+}
+
+4	4	4	4	
+3	3	3	
+2	2	
+1	
+
+int main() {
+    int n;
+    cout<<"Enter n: ";
+    cin>>n;
+    for(int i=n;i>0;i--)
+    {
+        for(int j=0;j<i;j++)
+        {
+            cout<<i<<"\t";
+        }
+        cout<<endl;
+    }
+}
+
+1111
+ 222
+  33
+   4
+
+int main() {
+    int n;
+    cout<<"Enter n: ";
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<i;j++)
+        {
+            cout<<" ";
+        }
+        for(int j=0;j<n-i;j++)
+        {
+            cout<<i+1;
+        }
+        cout<<endl;
+    }
+}
+
+AAAA
+ BBB
+  CC
+   D
+
+int main() {
+    int n;
+    cout<<"Enter n: ";
+    cin>>n;
+    char ch='A';
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<i;j++)
+        {
+            cout<<" ";
+        }
+        for(int j=0;j<n-i;j++)
+        {
+            cout<<ch;
+        }
+        cout<<endl;
+        ch++;
+    }
+}
+
+    1
+   121
+  12321
+ 1234321
+
+int main()
+{
+    int n;
+    cout<<"Enter n: ";
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=n;j>i;j--)
+        {
+            cout<<" ";
+        }
+        for(int j=0;j<=i;j++)
+        {
+            cout<<j+1;
+        }
+        for(int j=i;j>0;j--)
+        {
+            cout<<j;
+        }
+        cout<<endl;
+    }
+}
+
+   *
+  * *
+ *   *
+*     *
+ *   *
+  * *
+   *
+
+int main()
+{
+    int n;
+    cout<<"Enter n: ";
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=n;j>i;j--)
+        {
+            cout<<" ";
+        }
+        for(int j=0;j<i;j++)
+        {
+            if(j==0)
+            {
+                cout<<"*";
+            }
+            else{
+                cout<<" ";
+            }
+        }
+        for(int j=1;j<i;j++)
+        {
+            if(j==i-1)
+            {
+                cout<<"*";
+            }
+            else
+            {
+                cout<<" ";
+            }
+        }
+        cout<<endl;
+    }
+    for(int i=n;i>0;i--)
+    {
+        for(int j=n;j>i;j--)
+        {
+            cout<<" ";
+        }
+        for(int j=0;j<i;j++)
+        {
+            if(j==0)
+            {
+                cout<<"*";
+            }
+            else{
+                cout<<" ";
+            }
+        }
+        for(int j=1;j<i;j++)
+        {
+            if(j==i-1)
+            {
+                cout<<"*";
+            }
+            else
+            {
+                cout<<" ";
+            }
+        }
+        cout<<endl;
+    }
+}
+
+*      *
+**    **
+***  ***
+********
+***  ***
+**    **
+*      *
+
+int main()
+{
+    int n;
+    cout<<"Enter n: ";
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<=i;j++)
+        {
+            cout<<"*";
+        }
+        for(int j=n;j>i+1;j--)
+        {
+            cout<<" ";
+        }
+        for(int j=n;j>i+1;j--)
+        {
+            cout<<" ";
+        }
+        for(int j=0;j<=i;j++)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    for(int i=n-2;i>=0;i--)
+    {
+        for(int j=0;j<=i;j++)
+        {
+            cout<<"*";
+        }
+        for(int j=n;j>i+1;j--)
+        {
+            cout<<" ";
+        }
+        for(int j=n;j>i+1;j--)
+        {
+            cout<<" ";
+        }
+        for(int j=0;j<=i;j++)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+}
