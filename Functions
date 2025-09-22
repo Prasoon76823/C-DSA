@@ -1,0 +1,130 @@
+1. Sum of 1 to n number using function......
+
+#include <iostream>
+using namespace std;
+int sum(int n)
+{
+    int res;
+    for(int i=0;i<n;i++)
+    {
+        res=res+i+1;
+    }
+    return res;
+}
+2. Factorial of a number............
+int factorial(int n)
+{
+    int fact=1;
+    for(int i=0;i<n;i++)
+    {
+        fact=fact*(i+1);
+    }
+    return fact;
+}
+3. Sum of Digits of a given number...........
+int sumOfDigit(int n)
+{
+    int sum=0;
+    while(n>0)
+    {
+        int r=n%10;
+        sum=sum+r;
+        n=n/10;
+    }
+    return sum;
+}
+4.Bionomial coefficient....nCr.................
+int binomialCoefficient(int n,int r)
+{
+    int c=n-r;
+    int factn=1;
+    for(int i=0;i<n;i++)
+    {
+        factn*=(i+1);
+    }
+    int factr=1;
+    for(int i=0;i<r;i++)
+    {
+        factr*=(i+1);
+    }
+    int factc=1;
+    for(int i=0;i<c;i++)
+    {
+        factc*=(i+1);
+    }
+    int res=factn/(factr*factc);
+    return res;
+}
+OR.....................
+int nCr(int n,int r)
+{
+    int fact_n=factorial(n);
+    int fact_r=factorial(r);
+    int fact_c=factorial(n-r);
+    int res=fact_n/(fact_r*fact_c);
+    return res;
+}
+5. To check if the given no. is Prime or not...........
+int prime(int n){
+    int f=0;
+    for(int i=2;i<n;i++){
+        if(n%i==0){
+            return 0;
+        }
+    }
+    return 1;
+}
+6. Fibonacci Series...................
+void fib(int n)
+{
+    int a=0,b=1;
+    cout<<a;
+    cout<<b;
+    for(int i=3;i<=n;i++)
+    {
+        int c=a+b;
+        cout<<c;
+        a=b;
+        b=c;
+    }
+}
+
+int main() {
+    int n,r;
+    cout<<"Enter n: ";
+    cin>>n;
+    int result=sum(n);
+    cout<<"Sum of 1 to "<<n<<" : "<<result<<endl;
+    
+    int result1=factorial(n);
+    cout<<"Factorial of "<<n<<" : "<<result1<<endl;
+    
+    int num;
+    cout<<"Enter a number to add its digits: ";
+    cin>>num;
+    cout<<"Sum of digits of "<<num<<" : "<<sumOfDigit(num)<<endl;
+    
+    cout<<"Enter r: ";
+    cin>>r;
+    cout<<"Binomial coefficient of "<<n<<" and "<<r<<" : "<<binomialCoefficient(n,r)<<endl;
+    cout<<"nCr of "<<n<<" and "<<r<<" : "<<nCr(n,r)<<endl;
+    
+    if(prime(n)){
+        cout<<n<<" is Prime"<<endl;
+    }
+    else{
+        cout<<n<<" is not Prime"<<endl;
+    }
+    
+    cout << "Prime numbers from 1 to " << n << " are: ";
+    for (int i = 2; i <= n; i++) {
+        if (prime(i)) {
+            cout << i << " ";
+        }
+    }
+    cout<<endl;
+    
+    cout<<"Fibonacci Series: ";
+    fib(n);
+}
+
