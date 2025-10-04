@@ -22,3 +22,63 @@ int main() {
         cout<<a[i]<<" ";
     }
 }
+//*****************************************************************
+int main() {
+    int n,a[100];
+    cout<<"Enter size of array: ";
+    cin>>n;
+    cout<<"Enter array: ";
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    cout<<"Original array: ";
+    for(int i=0;i<n;i++)
+    {
+        cout<<a[i]<<" ";
+    }
+    int start=0,end=n-1;
+    while(start<end)
+    {
+        swap(a[start],a[end]);
+        start++;
+        end--;
+    }
+    cout<<endl;
+    cout<<"Reversed array: ";
+    for(int i=0;i<n;i++)
+    {
+        cout<<a[i]<<" ";
+    }
+}
+//***********************************************************
+int main() {
+    int n,a[100];
+    cout<<"Enter size of array: ";
+    cin>>n;
+    cout<<"Enter array: ";
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    cout<<"Original array: ";
+    for(int i=0;i<n;i++)
+    {
+        cout<<a[i]<<" ";
+    }
+    int start=0,end=n-1;
+    while(start<end)
+    {
+        int temp=a[start];
+        a[start]=a[end];
+        a[end]=temp;
+        start++;
+        end--;
+    }
+    cout<<endl;
+    cout<<"Reversed array: ";
+    for(int i=0;i<n;i++)
+    {
+        cout<<a[i]<<" ";
+    }
+}
