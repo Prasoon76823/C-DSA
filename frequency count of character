@@ -1,0 +1,36 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main()
+{
+    string name;
+    cout<<"Enter String: ";
+    cin>>name;
+    int n=name.length();
+    cout<<n<<endl;
+    for(int i=0;i<n;i++)
+    {
+        int count=0;
+        bool alreadyCount=false;
+        for(int j=0;j<i;j++)
+        {
+            if(name[i]==name[j])
+            {
+                alreadyCount=true;
+                break;
+            }
+        }
+        if(!alreadyCount)
+        {
+            for(int k=0;k<n;k++)
+            {
+                if(name[i]==name[k])
+                {
+                    count++;
+                }
+            }
+            cout<<name[i]<<count<<endl;
+        }
+        
+    }
+}
